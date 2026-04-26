@@ -94,3 +94,13 @@ a {
   text-decoration: none;
   margin-top: 5px;
 }
+.precio {
+  font-size: 18px;
+  font-weight: 700;
+  color: #25a244;
+  background: #e9f9ee;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 5px;
+}
