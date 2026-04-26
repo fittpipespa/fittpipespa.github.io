@@ -1,27 +1,27 @@
 // FILTRO
-function filtrar(tipo) {
-  const productos = document.querySelectorAll('.producto');
+const botones = document.querySelectorAll(".filtro");
+const productos = document.querySelectorAll(".producto");
 
-  productos.forEach(p => {
-    p.style.transform = "scale(0.8)";
-    p.style.opacity = "0";
+botones.forEach(btn => {
+  btn.addEventListener("click", () => {
 
-    setTimeout(() => {
-      if (tipo === 'todos' || p.classList.contains(tipo)) {
-        p.style.display = 'block';
+    botones.forEach(b => b.classList.remove("activo"));
+    btn.classList.add("activo");
+
+    const filtro = btn.textContent.toLowerCase();
+
+    productos.forEach(p => {
+      const cat = p.dataset.categoria;
+
+      if (filtro === "todos" || cat === filtro) {
+        p.style.display = "block";
       } else {
-        p.style.display = 'none';
+        p.style.display = "none";
       }
+    });
 
-      setTimeout(() => {
-        p.style.transform = "scale(1)";
-        p.style.opacity = "1";
-      }, 50);
-
-    }, 200);
   });
-}
-
+});
 // ANIMACIÓN SCROLL
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
