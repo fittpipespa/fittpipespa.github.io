@@ -3,7 +3,7 @@ body {
   font-family: Arial;
   background: #f4f6f8;
   text-align: center; /* 👈 centra textos */
-  padding-top: 120px; /* 👈 espacio para el header */
+  padding-top: 160px; /* 👈 espacio para el header */
 }
 
 header {
