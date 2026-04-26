@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FittPippe - Catálogo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FittPippe</title>
+
 <link rel="stylesheet" href="style.css">
- </head>
+</head>
 
 <body>
 
 <header>
-
-  <img class="logo" src="img/logopippe.png" alt="Logo FittPippe">
-
+  <img class="logo" src="img/logopippe.png">
   <h1>FittPippe</h1>
-  <p>Materiales de construcción y productos varios</p>
+  <p>Soluciones rápidas en fittings</p>
 </header>
 
-<!-- 🏢 EMPRESA -->
-<section>
-  <h2>🏢 Nuestra empresa</h2>
-  <div class="info">
-    FittPippe se dedica a la venta de materiales de construcción, ferretería y productos variados para obras y proyectos. 
-    Atención directa y ventas por catálogo online.
+<!-- FILTRO -->
+<div class="filtro">
+  <h3>¿Qué problema tienes?</h3>
+  <button onclick="filtrar('fuga')">Fuga</button>
+  <button onclick="filtrar('conexion')">Conexión</button>
+  <button onclick="filtrar('adaptar')">Adaptar</button>
+  <button onclick="filtrar('corte')">Corte</button>
+  <button onclick="filtrar('todos')">Ver todo</button>
+</div>
+
+<!-- PRODUCTOS -->
+<div class="grid">
+
+  <div class="producto fuga">
+    <img src="img/codo.jpg">
+    <h4>Codo PVC 90°</h4>
+    <p>$1.200</p>
+    <a href="https://wa.me/569XXXXXXXX?text=Necesito%20codo">Solicitar</a>
   </div>
-</section>
 
-<!-- 📦 CATÁLOGO -->
-<section>
-  <h2> 📦 Nuestro catálogo</h2> 
-
-  <div class="container">
-
-    <div class="card">
-      <img src="cbb.png" alt="Producto">
-      <h3>Cemento</h3>
-      <p class="price">$4.500</p>
-      <a class="btn" href="https://wa.me/56948713517?text=Hola%20quiero%20Cemento">Pedir</a>
-    </div>
-
-    <div class="card">
-      <img src="ladrillos.png" alt="Producto">
-      <h3>Ladrillos</h3>
-      <p class="price">$1.200</p>
-      <a class="btn" href="https://wa.me/56948713517?text=Hola%20quiero%20Ladrillos">Pedir</a>
-    </div>
-
+  <div class="producto conexion">
+    <img src="img/tee.jpg">
+    <h4>Tee PVC</h4>
+    <p>$1.500</p>
+    <a href="https://wa.me/569XXXXXXXX?text=Necesito%20tee">Solicitar</a>
   </div>
-</section>
 
-<!-- ⭐ SUGERIDOS -->
-<section>
-  <h2>⭐ Sugeridos</h2>
-
-  <div class="container">
-
-    <div class="card">
-      <img src="Arena.png" alt="Producto">
-      <h3>Bolsa Arena</h3>
-      <p class="price">$3.000</p>
-      <a class="btn" href="https://wa.me/56948713517?text=Hola%20quiero%20Arena">Pedir</a>
-    </div>
-
+  <div class="producto adaptar">
+    <img src="img/reduccion.jpg">
+    <h4>Reducción PVC</h4>
+    <p>$900</p>
+    <a href="https://wa.me/569XXXXXXXX?text=Necesito%20reduccion">Solicitar</a>
   </div>
-</section>
+
+  <div class="producto corte">
+    <img src="img/valvula.jpg">
+    <h4>Válvula de Bola</h4>
+    <p>$3.500</p>
+    <a href="https://wa.me/569XXXXXXXX?text=Necesito%20valvula">Solicitar</a>
+  </div>
+
+</div>
+
 <script src="app.js"></script>
+
 </body>
 </html>
