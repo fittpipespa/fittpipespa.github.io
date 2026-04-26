@@ -83,17 +83,6 @@ button:active {
 .producto a {
   margin-top: auto;
 }
-
-/* BOTÓN */
-a {
-  display: block;
-  background: #25D366;
-  color: white;
-  padding: 8px;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 5px;
-}
 .precio {
   font-size: 18px;
   font-weight: 700;
@@ -104,3 +93,14 @@ a {
   display: inline-block;
   margin-top: 5px;
 }
+/* BOTÓN */
+a {
+  display: block;
+  background: #25D366;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
