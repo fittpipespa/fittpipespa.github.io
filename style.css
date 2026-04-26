@@ -63,17 +63,25 @@ button:active {
 .producto {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* 👈 distribuye contenido */
+  justify-content: flex-start;
   height: 100%;
 }
 
+/* 👇 esto es APARTE */
 .producto img {
   width: 100%;
-  border-radius: 10px;
+  height: 140px;
+  object-fit: cover;
 }
 
-.producto:hover {
-  transform: translateY(-5px);
+/* 👇 esto es APARTE */
+.producto h4 {
+  min-height: 40px;
+}
+
+/* 👇 esto es APARTE */
+.producto a {
+  margin-top: auto;
 }
 
 /* BOTÓN */
