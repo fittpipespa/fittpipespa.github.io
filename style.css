@@ -25,10 +25,39 @@ header {
   max-width: 90%;
 }
 
-/* FILTRO */
+.filtros {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+  white-space: nowrap;
+
+  /* mejora visual */
+  scrollbar-width: none; /* Firefox */
+}
+
+.filtros::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
 .filtro {
-  text-align: center;
-  padding: 15px;
+  flex: 0 0 auto;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  background: #eee;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.filtro:hover {
+  background: #ddd;
+}
+
+.filtro.activo {
+  background: #25a244;
+  color: white;
 }
 
 button {
