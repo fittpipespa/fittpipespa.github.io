@@ -60,11 +60,11 @@ button:active {
   }
 }
 
-/* PRODUCTO */
 .producto {
-  width: 100%;
-  max-width: 220px;  /* 👈 evita que crezca demasiado */
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 👈 distribuye contenido */
+  height: 100%;
 }
 
 .producto img {
