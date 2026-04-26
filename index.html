@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo Confites</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* HEADER */
+header {
+  background: #ff6600;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 22px;
+}
+
+/* CATEGORÍAS */
+h2 {
+  margin: 15px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  padding: 10px;
+}
+
+/* PRODUCTO */
+.producto {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.producto:hover {
+  transform: scale(1.03);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.precio {
+  font-weight: bold;
+  margin: 5px 0;
+  color: #333;
+}
+
+/* BOTÓN */
+a {
+  display: block;
+  background: #25D366;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #666;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  Catálogo de Confites 🍭
+</header>
+
+<!-- ALTA ROTACIÓN -->
+<h2>🔥 Alta Rotación</h2>
+<div class="grid">
+
+  <div class="producto">
+    <img src="https://via.placeholder.com/150">
+    <h4>Cuchuflí chocolate</h4>
+    <p class="precio">$500</p>
+    <a href="https://wa.me/569XXXXXXXX?text=Quiero%20Cuchuflí">
+      Comprar
+    </a>
+  </div>
+
+  <div class="producto">
+    <img src="https://via.placeholder.com/150">
+    <h4>Guagüitas</h4>
+    <p class="precio">$300</p>
+    <a href="https://wa.me/569XXXXXXXX?text=Quiero%20Guagüitas">
+      Comprar
+    </a>
+  </div>
+
+</div>
+
+<!-- MEDIA ROTACIÓN -->
+<h2>⭐ Media Rotación</h2>
+<div class="grid">
+
+  <div class="producto">
+    <img src="https://via.placeholder.com/150">
+    <h4>Malvas coco</h4>
+    <p class="precio">$400</p>
+    <a href="https://wa.me/569XXXXXXXX?text=Quiero%20Malvas">
+      Comprar
+    </a>
+  </div>
+
+</div>
+
+<!-- BAJA ROTACIÓN -->
+<h2>📦 Baja Rotación</h2>
+<div class="grid">
+
+  <div class="producto">
+    <img src="https://via.placeholder.com/150">
+    <h4>Pastillas salón</h4>
+    <p class="precio">$250</p>
+    <a href="https://wa.me/569XXXXXXXX?text=Quiero%20Pastillas">
+      Comprar
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  Catálogo digital - Proyecto académico
+</footer>
+
+</body>
+</html>
