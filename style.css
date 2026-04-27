@@ -201,3 +201,73 @@ a {
     text-align: center;
   }
 }
+.producto-detalle {
+  display: flex;
+  gap: 50px;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+/* IZQUIERDA */
+.producto-izq {
+  width: 40%;
+}
+
+.producto-img img {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* DERECHA */
+.producto-der {
+  width: 60%;
+  text-align: left;
+}
+
+.precio {
+  font-size: 30px;
+  color: #e60023;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.descripcion {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* BENEFICIOS */
+.beneficios {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+/* FICHA */
+.ficha {
+  margin-top: 20px;
+}
+
+.ficha-btn {
+  width: 100%;
+  padding: 10px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.ficha-contenido {
+  display: none;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+}
+
+.ficha-contenido table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ficha-contenido td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
