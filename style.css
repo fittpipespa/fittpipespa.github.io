@@ -6,25 +6,41 @@ body {
   padding-top: 310px; /* 👈 espacio para el header */
 }
 
-header {
-  background: #1e3a5f;
-  color: white;
-  text-align: center;
-  padding: 20px;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  gap: 15px;
+  flex-wrap: wrap; /* clave para móvil */
+  background: #fff;
+}
 
-  position: fixed;   /* 👈 importante */
-  top: 0;
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.buscador {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.buscador input {
   width: 100%;
-  z-index: 1000;
-
-  transition: transform 0.3s ease;
+  max-width: 400px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-.logo {
-  width: 140px;   /* 👈 más grande */
-  max-width: 90%;
+.descripcion {
+  font-size: 14px;
+  color: #555;
+  text-align: right;
+  max-width: 250px;
 }
-
 .filtro {
   text-align: center;
   padding: 15px;
