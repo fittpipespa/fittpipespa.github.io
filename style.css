@@ -67,13 +67,11 @@ button:active {
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  list-style: none;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+  gap: 10px;
+  max-width: 100%;
 }
-
 .menu li {
   position: relative;
 }
@@ -93,12 +91,10 @@ button:active {
   top: 100%;
   left: 0;
   background: #fff;
-  list-style: none;
   min-width: 160px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   z-index: 1000;
 }
-
 .submenu li a {
   padding: 10px;
   font-weight: 400;
