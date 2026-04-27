@@ -73,6 +73,16 @@ button:active {
     margin: auto;
   }
 }
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .descripcion {
+    text-align: center;
+  }
+}
 
 .producto {
   display: flex;
