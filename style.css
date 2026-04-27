@@ -376,52 +376,71 @@ button:active {
   padding: 20px;
 }
 
-/* ===== MENÚ LATERAL ===== */
+/* ===== MENÚ LATERAL PRO ===== */
+
 .menu-categorias {
-  width: 320px;
-  min-width: 280px;
-  background: #fff;
+  width: 260px;
+  background: #ffffff;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   height: fit-content;
+  font-family: Arial, sans-serif;
 }
 
 /* Título */
 .menu-categorias h3 {
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
-/* DETALLES (DESPLEGABLE) */
-.menu-categorias details {
-  margin-bottom: 10px;
+/* Quitar flecha fea */
+.menu-categorias summary {
+  list-style: none;
 }
 
-/* TITULO DESPLEGABLE */
+/* Quitar flecha en Chrome */
+.menu-categorias summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Estilo categoría */
 .menu-categorias summary {
+  padding: 10px 12px;
   cursor: pointer;
-  font-weight: bold;
-  padding: 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+/* Hover categoría */
+.menu-categorias summary:hover {
+  background: #f2f2f2;
+}
+
+/* Flecha personalizada */
+.menu-categorias summary::before {
+  content: "›";
+  margin-right: 8px;
+  color: #ff6600;
+  font-size: 18px;
+}
+
+/* Subcategorías */
+.menu-categorias a {
+  display: block;
+  padding: 6px 12px 6px 25px;
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
   border-radius: 8px;
 }
 
-/* LINKS */
-.menu-categorias a {
-  display: block;
-  padding: 6px 10px;
-  margin-left: 10px;
-  text-decoration: none;
-  color: #333;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-/* HOVER */
+/* Hover subcategoría */
 .menu-categorias a:hover {
   background: #ff6600;
   color: #fff;
 }
-
 /* ===== PRODUCTOS ===== */
 .productos {
   flex: 1;
