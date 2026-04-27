@@ -384,6 +384,36 @@ button:active {
   padding: 10px;
   border-bottom: 1px solid #eee;
 }
+.menu a:hover {
+  background: #1e3a5f;
+  color: #fff;
+  border-radius: 6px;
+}
+.submenu li a:hover {
+  background: #f0f0f0;
+  padding-left: 15px;
+  transition: 0.2s;
+}
+.producto {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.producto img {
+  transition: transform 0.3s ease;
+}
+
+.producto img:hover {
+  transform: scale(1.05);
+}
+.menu a,
+.producto,
+.submenu li a {
+  transition: all 0.2s ease;
+}
 @media (max-width: 768px) {
   .producto-detalle {
     flex-direction: column;
