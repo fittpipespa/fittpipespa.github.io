@@ -1,17 +1,18 @@
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ===== GENERAL ===== */
 body {
-  margin: 0;
   font-family: Arial;
   background: #f4f6f8;
-  text-align: center; /* 👈 centra textos */
-  padding-top: 0px; /* 👈 espacio para el header */
+  text-align: center;
 }
 
+/* ===== HEADER ===== */
 header {
   display: flex;
   align-items: center;
@@ -22,13 +23,8 @@ header {
   background: #fff;
 }
 
-.logo {
-  flex: 0 0 auto;
-}
-
 .logo img {
   height: 60px;
-  width: auto;
   max-width: 120px;
   object-fit: contain;
 }
@@ -53,10 +49,13 @@ header {
   text-align: right;
   max-width: 250px;
 }
+
+/* ===== FILTRO ===== */
 .filtro {
-  text-align: center;
   padding: 30px;
 }
+
+/* ===== BOTONES GENERALES ===== */
 button {
   margin: 5px;
   padding: 10px 14px;
@@ -68,15 +67,16 @@ button {
 }
 
 button:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
+/* ===== GRID PRODUCTOS ===== */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
   padding: 10px;
-}   
+}
 
 @media (min-width: 768px) {
   .grid {
@@ -85,33 +85,18 @@ button:active {
     margin: auto;
   }
 }
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
-  }
-  @media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 
-  .descripcion {
-    text-align: center;
-  }
-}
-
+/* ===== PRODUCTO CARD ===== */
 .producto {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   height: 100%;
+  transition: 0.2s;
 }
 
 .producto img {
   width: 100%;
-  height: 240px;
+  height: 220px;
   object-fit: cover;
 }
 
@@ -119,21 +104,16 @@ button:active {
   min-height: 40px;
 }
 
-.producto a {
-  margin-top: auto;
-}
-.producto {
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
 .producto.oculto {
   opacity: 0;
   transform: scale(0.95);
   pointer-events: none;
 }
-.precio {
+
+/* PRECIO CATÁLOGO */
+.producto .precio {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: bold;
   color: #25a244;
   background: #e9f9ee;
   padding: 5px 10px;
@@ -141,23 +121,21 @@ button:active {
   display: inline-block;
   margin-top: 5px;
 }
-/* BOTÓN */
-a {
-  display: block;
-  background: #25D366;
-  color: white;
-  padding: 8px;
-  border-radius: 6px;
+
+/* LINKS PRODUCTO */
+.producto a {
   text-decoration: none;
-  margin-top: 5px;
+  color: inherit;
+  display: block;
 }
+
+/* ===== FOOTER ===== */
 .footer {
   background: #111;
   color: white;
   padding: 30px 20px;
 }
 
-/* CONTENEDOR PRINCIPAL */
 .footer-contenido {
   display: flex;
   justify-content: space-between;
@@ -165,22 +143,18 @@ a {
   flex-wrap: wrap;
 }
 
-/* IZQUIERDA */
 .footer-info {
   text-align: left;
 }
 
-/* CENTRO */
 .footer-logo img {
   width: 120px;
 }
 
-/* DERECHA */
 .footer-empresa {
   text-align: right;
 }
 
-/* PARTE INFERIOR */
 .footer-copy {
   text-align: center;
   margin-top: 20px;
@@ -188,19 +162,7 @@ a {
   opacity: 0.7;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .footer-contenido {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .footer-info,
-  .footer-empresa {
-    text-align: center;
-  }
-}
+/* ===== DETALLE PRODUCTO (SODIMAC) ===== */
 .producto-detalle {
   display: flex;
   gap: 40px;
@@ -209,13 +171,12 @@ a {
   margin: auto;
 }
 
-/* IZQUIERDA */
 .producto-izq img {
   width: 100%;
   max-width: 400px;
 }
 
-/* DERECHA (CAJA) */
+/* CAJA DERECHA */
 .producto-der {
   background: white;
   padding: 25px;
@@ -225,6 +186,7 @@ a {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* TEXTO DETALLE */
 .marca {
   font-size: 14px;
   color: gray;
@@ -235,13 +197,17 @@ a {
   color: #777;
 }
 
-.precio {
+/* PRECIO DETALLE */
+.producto-der .precio {
   font-size: 32px;
   color: #e60023;
   font-weight: bold;
   margin: 10px 0;
+  background: none;
+  padding: 0;
 }
 
+/* ESTADOS */
 .stock {
   color: green;
   font-weight: bold;
@@ -251,17 +217,15 @@ a {
   margin-bottom: 15px;
 }
 
-button {
+/* BOTON DETALLE */
+.producto-der button {
   width: 100%;
   padding: 15px;
   background: #25D366;
-  color: white;
-  border: none;
   font-size: 16px;
-  cursor: pointer;
 }
 
-/* DESCRIPCIÓN */
+/* ===== DESCRIPCIÓN ===== */
 .descripcion-box {
   max-width: 1100px;
   margin: auto;
@@ -269,7 +233,7 @@ button {
   text-align: left;
 }
 
-/* FICHA */
+/* ===== FICHA ===== */
 .ficha-box {
   max-width: 1100px;
   margin: auto;
@@ -293,4 +257,31 @@ button {
 .ficha-contenido td {
   padding: 10px;
   border-bottom: 1px solid #eee;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .descripcion {
+    text-align: center;
+  }
+
+  .footer-contenido {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .producto-detalle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto-der {
+    width: 100%;
+  }
 }
