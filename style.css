@@ -155,29 +155,52 @@ a {
   margin-top: 5px;
 }
 .footer {
-  margin-top: auto;
-  padding: 20px;
   background: #111;
   color: white;
+  padding: 30px 20px;
 }
 
-.footer-creditos {
+/* CONTENEDOR PRINCIPAL */
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* IZQUIERDA */
+.footer-info {
+  text-align: left;
+}
+
+/* CENTRO */
+.footer-logo img {
+  width: 120px;
+}
+
+/* DERECHA */
+.footer-empresa {
+  text-align: right;
+}
+
+/* PARTE INFERIOR */
+.footer-copy {
   text-align: center;
+  margin-top: 20px;
   font-size: 14px;
-  opacity: 0.8;
-}
-.footer div {
-  flex: 1;
-  min-width: 200px;
+  opacity: 0.7;
 }
 
-.footer h4 {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-contenido {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 
-.footer p {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #ccc;
+  .footer-info,
+  .footer-empresa {
+    text-align: center;
+  }
 }
