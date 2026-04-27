@@ -58,3 +58,9 @@ function toggleFicha() {
   const ficha = document.getElementById("fichaContenido");
   ficha.style.display = ficha.style.display === "block" ? "none" : "block";
 }
+document.querySelectorAll(".dropdown > a").forEach(btn => {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.parentElement.classList.toggle("open");
+  });
+});
