@@ -3,22 +3,20 @@ function filtrar(tipo) {
   const productos = document.querySelectorAll('.producto');
 
   productos.forEach(p => {
-    p.style.transform = "scale(0.8)";
-    p.style.opacity = "0";
+    const mostrar = tipo === 'todos' || p.classList.contains(tipo);
 
-    setTimeout(() => {
-      if (tipo === 'todos' || p.classList.contains(tipo)) {
-        p.style.display = 'block';
-      } else {
-        p.style.display = 'none';
-      }
+    if (mostrar) {
+      p.style.display = 'block';
+      p.classList.add('mostrar');
+      p.classList.remove('oculto');
+    } else {
+      p.classList.add('oculto');
+      p.classList.remove('mostrar');
 
       setTimeout(() => {
-        p.style.transform = "scale(1)";
-        p.style.opacity = "1";
-      }, 50);
-
-    }, 200);
+        p.style.display = 'none';
+      }, 250);
+    }
   });
 }
 
