@@ -183,8 +183,7 @@ button:active {
 
 /* 🔧 FIX LOGO */
 .footer-logo img {
-  width: 120px;
-  max-width: 100%;
+  width: 80px;
   height: auto;
   object-fit: contain;
   display: block;
@@ -201,10 +200,10 @@ button:active {
 
 /* móvil */
 @media (max-width: 768px) {
-  .footer-contenido {
-    flex-direction: column;
-    text-align: center;
+  .footer-logo img {
+    width: 70px;
   }
+}
 
   .footer-info,
   .footer-empresa {
