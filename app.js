@@ -48,3 +48,13 @@ document.querySelector(".buscador input").addEventListener("input", function () 
     p.style.display = nombre.includes(texto) ? "block" : "none";
   });
 });
+function contactar(producto) {
+  const mensaje = `Hola, quiero cotizar: ${producto}`;
+  const url = `https://wa.me/56948713517?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, '_blank');
+}
+
+function toggleFicha() {
+  const ficha = document.getElementById("fichaContenido");
+  ficha.style.display = ficha.style.display === "block" ? "none" : "block";
+}
