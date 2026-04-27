@@ -479,3 +479,41 @@ button:active {
   transform: scale(1.02);
   transition: 0.2s ease;
 }
+@media (max-width: 768px) {
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .producto img {
+    height: 110px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buscador {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .footer-info,
+  .footer-empresa {
+    text-align: center;
+  }
+
+  .footer-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.grid {
+  align-items: stretch;
+}
