@@ -164,6 +164,29 @@ button:active {
   color: #1a7f37;
   text-align: center;
 }
+/* ===== DESCRIPCIÓN PRODUCTO ===== */
+.descripcion-box {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.descripcion-box h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.descripcion-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 10px;
+}
 
 /* ===== FOOTER ===== */
 .footer {
