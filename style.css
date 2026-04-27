@@ -379,6 +379,7 @@ button:active {
 /* ===== MENÚ LATERAL ===== */
 .menu-categorias {
   width: 320px;
+  min-width: 280px;
   background: #fff;
   padding: 20px;
   border-radius: 12px;
