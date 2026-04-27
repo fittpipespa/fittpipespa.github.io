@@ -390,68 +390,70 @@ button:active {
 
 /* ===== MENÚ LATERAL PRO ===== */
 
-.menu-categorias {
-  width: 220px;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  height: fit-content;
-  font-family: Arial, sans-serif;
+/* ===== MENU CATEGORÍAS ===== */
+.categorias {
+  background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
-/* Título */
-.menu-categorias h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-/* Quitar flecha fea */
-.menu-categorias summary {
+.menu {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* Quitar flecha en Chrome */
-.menu-categorias summary::-webkit-details-marker {
-  display: none;
+.menu li {
+  position: relative;
 }
 
-/* Estilo categoría */
-.menu-categorias summary {
-  padding: 10px 12px;
-  cursor: pointer;
-  border-radius: 10px;
-  font-weight: 600;
-  transition: background 0.2s;
-}
-
-/* Hover categoría */
-.menu-categorias summary:hover {
-  background: #f2f2f2;
-}
-
-/* Flecha personalizada */
-.menu-categorias summary::before {
-  content: "›";
-  margin-right: 8px;
-  color: #ff6600;
-  font-size: 18px;
-}
-
-/* Subcategorías */
-.menu-categorias a {
+.menu a {
   display: block;
-  padding: 6px 12px 6px 25px;
+  padding: 12px 10px;
   text-decoration: none;
-  color: #555;
-  font-size: 14px;
-  border-radius: 8px;
+  color: #333;
+  font-weight: 600;
 }
 
-/* Hover subcategoría */
-.menu-categorias a:hover {
-  background: #ff6600;
-  color: #fff;
+/* ===== DROPDOWN ===== */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 160px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.submenu li a {
+  padding: 10px;
+  font-weight: 400;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submenu {
+    position: static;
+    box-shadow: none;
+  }
+
+  .dropdown.open .submenu {
+    display: block;
+  }
 }
 /* ===== PRODUCTOS ===== */
 .productos {
