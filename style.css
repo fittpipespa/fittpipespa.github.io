@@ -37,7 +37,7 @@ header {
 
 .buscador input {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -91,7 +91,7 @@ button:active {
 
 .producto img {
   width: 100%;
-  height: 160px;
+  height: 120px;
   object-fit: cover;
   border-radius: 10px;
 }
