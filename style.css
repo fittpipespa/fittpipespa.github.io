@@ -57,9 +57,7 @@ button:active {
   transform: scale(0.95);
 }
 
-/* =========================
-   CATEGORÍAS (MENU)
-========================= */
+
 .categorias {
   background: #fff;
   border-bottom: 1px solid #eee;
@@ -85,9 +83,12 @@ button:active {
 }
 
 /* DROPDOWN */
+.dropdown{
+  position: relative
+}
 .submenu {
   display: none;
-  position: relative;
+  position: absolute;
   top: 100%;
   left: 0;
   background: #fff;
