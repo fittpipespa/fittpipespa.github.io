@@ -69,7 +69,7 @@ html{
   background:
   linear-gradient(rgba(0,0,0,0.6),
   rgba(0,0,0,0.6)),
-  url('../img/hero.jpg') center/cover;
+  url('img/hero.jpg') center/cover;
   display:flex;
   align-items:center;
   justify-content:center;
