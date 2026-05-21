@@ -316,26 +316,25 @@ body{
 }
 
 .team-icon{
-  width:80px;
-  height:80px;
-  margin:auto auto 25px;
+  width:120px;
+  height:120px;
 
-  background:linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-dark)
-  );
+  margin:auto auto 25px;
 
   border-radius:50%;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  overflow:hidden;
+
+  border:4px solid var(--primary-blue);
 }
 
-.team-icon i{
-  color:#fff;
-  font-size:2rem;
+.team-icon img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  display:block;
 }
 
 .team-card h3{
