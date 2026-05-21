@@ -514,8 +514,8 @@ body{
   }
 
   .hero{
-  height:58vh;
-  padding-top:70px;
+    aspect-ratio:auto;
+    height:60vh;
 }
   
 .hero-video{
