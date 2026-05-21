@@ -436,6 +436,11 @@ body{
   font-weight:600;
   font-size:.95rem;
 }
+.whatsapp-help img{
+  width:34px;
+  height:34px;
+  object-fit:contain;
+}
 
 /* MOBILE */
 
