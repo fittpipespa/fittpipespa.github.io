@@ -90,9 +90,7 @@ body{
 
   width:100%;
 
-  aspect-ratio:16/9;
-
-  max-height:90vh;
+  height:72vh;
 
   display:flex;
   align-items:center;
