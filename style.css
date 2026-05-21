@@ -76,10 +76,10 @@ body{
 
 .menu-btn{
   display:none;
-  font-size:1.8rem;
+  font-size:2rem;
   color:var(--primary-dark);
   cursor:pointer;
-  z-index:2000;
+  font-weight:700;
 }
 
 /* HERO */
