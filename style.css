@@ -89,9 +89,10 @@ body{
   position:relative;
 
   width:100%;
+  aspect-ratio:16/9;
 
-  height:72vh;
-
+  max-height:90vh;
+  
   display:flex;
   align-items:center;
   justify-content:center;
@@ -518,7 +519,8 @@ body{
   }
 
   .hero{
-    height:55vh;
+    aspect-ratio:auto;
+    height:60svh;
 }
   
 .hero-video{
