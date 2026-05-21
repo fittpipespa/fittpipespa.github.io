@@ -76,15 +76,16 @@ body{
 
 .menu-btn{
   display:none;
-  font-size:1.5rem;
+  font-size:1.8rem;
   color:var(--primary-dark);
   cursor:pointer;
+  z-index:2000;
 }
 
 /* HERO */
 
 .hero{
-  height:100vh;
+  height:85vh;
 
   background:
   linear-gradient(rgba(13,43,91,.82),
@@ -108,8 +109,8 @@ body{
 }
 
 .hero-content h1{
-  font-size:4rem;
-  line-height:1.1;
+  font-size:2rem;
+  line-height:1.2;
   margin-bottom:25px;
 }
 
@@ -487,5 +488,19 @@ body{
 .whatsapp-help span{
   display:none;
 }
+  .menu-btn{
+    display:block;
 
+}
+.hero{
+  min-height:75vh;
+  padding-top:120px;
+}
+  .navbar{
+  padding:14px 0;
+}
+
+.logo img{
+  height:38px;
+}
 }
