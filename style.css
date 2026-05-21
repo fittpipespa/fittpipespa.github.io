@@ -255,6 +255,84 @@ body{
 .category-info h3{
   color:var(--primary-dark);
 }
+/* TEAM */
+
+.team{
+  padding:110px 0;
+  background:#fff;
+}
+
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.team-card{
+  background:#fff;
+  border-radius:20px;
+  padding:40px 30px;
+  text-align:center;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.team-card:hover{
+  transform:translateY(-8px);
+}
+
+.team-icon{
+  width:80px;
+  height:80px;
+  margin:auto auto 25px;
+
+  background:linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--primary-dark)
+  );
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.team-icon i{
+  color:#fff;
+  font-size:2rem;
+}
+
+.team-card h3{
+  color:var(--primary-dark);
+  margin-bottom:10px;
+}
+
+.team-card span{
+  display:block;
+  margin-bottom:25px;
+  color:var(--gray);
+  font-weight:500;
+}
+
+.team-card a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  margin-bottom:15px;
+
+  text-decoration:none;
+  color:var(--text-dark);
+
+  transition:.3s;
+}
+
+.team-card a:hover{
+  color:var(--primary-blue);
+}
 
 /* CATALOG */
 
