@@ -133,18 +133,24 @@ body{
 }
 
 .hero-content{
+  position:relative;
+
+  z-index:2;
+  
   max-width:850px;
+
+  padding:20px;
 }
 
 .hero-content h1{
-  font-size:2rem;
-  line-height:1.2;
-  margin-bottom:25px;
+  font-size:3rem;
+  line-height:1.1;
+  margin-bottom:15px;
 }
 
 .hero-content p{
-  font-size:1.2rem;
-  margin-bottom:35px;
+  font-size:1rem;
+  margin-bottom:20px;
   color:#E5E7EB;
 }
 
@@ -153,7 +159,7 @@ body{
 .hero-buttons{
   display:flex;
   justify-content:center;
-  gap:20px;
+  gap:15px;
   flex-wrap:wrap;
 }
 
