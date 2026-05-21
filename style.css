@@ -125,7 +125,7 @@ body{
 }
 
 .hero-content{
-  max-width:600px;
+  max-width:850px;
 }
 
 .hero-content h1{
@@ -537,7 +537,7 @@ body{
 .hero-content{
   position:relative;
   z-index:2;
-  max-width:600px;
+  max-width:850px;
 }
 
 .hero-content h1{
