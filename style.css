@@ -114,6 +114,8 @@ body{
 
   object-fit:cover;
 
+  traslate:none;
+
   z-index:-2;
 }
 
