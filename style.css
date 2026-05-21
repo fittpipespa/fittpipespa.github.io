@@ -518,8 +518,7 @@ body{
   }
 
   .hero{
-    aspect-ratio:auto;
-    height:60vh;
+    height:55vh;
 }
   
 .hero-video{
