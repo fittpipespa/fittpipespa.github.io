@@ -580,5 +580,13 @@ body{
   .contact h2{
     font-size:1.8rem;
   }
+  .footer-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+  }
 
 }
