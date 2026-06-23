@@ -580,13 +580,16 @@ body{
   .contact h2{
     font-size:1.8rem;
   }
-  .footer-redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin: 15px 0;
-  }
+  .footer-redes i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-redes i:hover {
+    transform: scale(1.2);
+    color: #25D366;
+}
 
 }
