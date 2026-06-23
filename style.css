@@ -581,15 +581,22 @@ body{
     font-size:1.8rem;
   }
   
-  .footer-redes a {
-    font-size: 28px;   /* 🔥 tamaño del icono */
-    color: white;      /* evita el azul */
-    transition: 0.3s;
-    text-decoration: none;
+  .footer-redes{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:35px;
+  margin-bottom:20px;
 }
 
-.footer-redes a:hover {
-    transform: scale(1.2);
-    color: #25D366;
+.footer-redes a{
+  color:#fff;
+  font-size:42px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.footer-redes a:hover{
+  transform:scale(1.15);
 }
 }
