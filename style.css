@@ -580,16 +580,23 @@ body{
   .contact h2{
     font-size:1.8rem;
   }
-  .footer-redes i {
-    font-size: 24px;
-    margin: 0 10px;
-    color: white;
-    transition: 0.3s;
+  .footer-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.footer-redes i:hover {
+.footer-redes a {
+    font-size: 28px;   /* 🔥 tamaño del icono */
+    color: white;      /* evita el azul */
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.footer-redes a:hover {
     transform: scale(1.2);
     color: #25D366;
 }
-
 }
