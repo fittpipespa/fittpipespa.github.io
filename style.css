@@ -580,15 +580,8 @@ body{
   .contact h2{
     font-size:1.8rem;
   }
-  .footer-redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.footer-redes a {
+  
+  .footer-redes a {
     font-size: 28px;   /* 🔥 tamaño del icono */
     color: white;      /* evita el azul */
     transition: 0.3s;
